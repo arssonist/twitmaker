@@ -3,16 +3,16 @@
 $(function(){
   $("#create-tweet").on("click", function(event){
     var newTweet = $('#new_tweet').serialize();
-    console.log(newTweet);
+    // console.log(newTweet);
     event.preventDefault();
-  var url = $(this).attr('href');
-  $.ajax({
-    url:'/tweets',
-    method:'POST',
-    data:{tweet:message},
-    dataType:'html',
-  }).done(function(response){
-    console.log(response);
+
+    $.ajax({
+      url:'/tweets',
+      method:'POST',
+      data: newTweet,
+      dataType:'html'
+    }).done(function(response){
+
   });
 })
 })
