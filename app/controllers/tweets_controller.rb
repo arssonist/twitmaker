@@ -10,7 +10,7 @@ class TweetsController < ApplicationController
     if @tweet.save
 
       respond_to do |format|
-        format.html{render @tweet }
+        format.html{ render @tweet }
       end
 
     else
