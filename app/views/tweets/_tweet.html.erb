@@ -1,4 +1,9 @@
 
-<h1>This is a tweet</h1>
 
-  <%= @tweet %>
+
+<li class="tweet">
+      <p>
+        <%= @tweet.message %>
+      </p>
+      <time> <%= @tweet.created_at %></time>
+    </li>

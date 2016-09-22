@@ -13,8 +13,8 @@ $(function(){
       data: newTweet,
       dataType:'html'
     }).done(function(response){
-      console.log(response);
-      // $('body').append(response);
+      // console.log(response);
+      $('.tweets').append(response);
   });
 })
 })
